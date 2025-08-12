@@ -1,0 +1,133 @@
+/* .nav {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  backdrop-filter: blur(6px);
+  background: linear-gradient(
+    180deg,
+    rgba(8, 12, 18, 0.65),
+    rgba(8, 12, 18, 0.4)
+  );
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-links li {
+  cursor: pointer;
+  color: var(--muted);
+  transition: color 0.15s;
+}
+.nav-links li:hover {
+  color: var(--accent);
+}
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+} */
+/* Existing styles */
+.name {
+  color: #ede6e8;
+}
+.navbar-heading {
+  color: #ddd;
+}
+.navbar {
+  height: 5rem;
+  width: 100vw;
+  position: sticky;
+  background-color: rgb(12, 13, 13);
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  z-index: 3;
+}
+
+.desktopMenu {
+  display: flex;
+}
+
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+  color: rgb(120, 204, 51);
+}
+
+.desktopMenuBtn {
+  border: none;
+  background: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  height: 40px;
+  width: 130px;
+  border-radius: 2rem;
+}
+
+.desktopMenuListItem:hover {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}
+
+/* Responsive styles */
+.menu-icon {
+  display: none; /* Hidden by default */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none; /* Hide the menu on small screens */
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    background-color: #333;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 200px;
+    z-index: 5;
+  }
+
+  .desktopMenu.active {
+    display: flex; /* Show the menu when active on small screens */
+  }
+
+  .desktopMenuListItem {
+    margin: 1rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon on small screens */
+  }
+
+  .desktopMenuBtn {
+    display: none; /* Hide the button on small screens */
+  }
+}

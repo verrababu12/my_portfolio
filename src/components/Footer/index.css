@@ -1,0 +1,23 @@
+.footer {
+  padding: 18px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  margin-top: 40px;
+  background-color: rgb(247, 243, 243);
+  text-align: center;
+}
+.footer-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links a {
+  margin-left: 12px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
